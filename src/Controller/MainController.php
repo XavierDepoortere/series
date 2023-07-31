@@ -13,8 +13,7 @@ class MainController extends AbstractController{
     public function home() {
 
         
-        echo "coucou";
-        die();
+        return $this->render(view: 'main/home.html.twig');
     }
 
     #[Route('/test', name: 'main_test')]
@@ -22,7 +21,6 @@ class MainController extends AbstractController{
     public function test() {
 
         
-        echo "test";
-        die();
+        return $this->render(view: 'main/test.html.twig');
     }
 }
